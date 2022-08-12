@@ -1,0 +1,18 @@
+.gridContainer {
+	display: grid;
+	gap: 32px;
+	grid-template-columns: auto auto auto auto;
+}
+
+.button {
+	font-family: 'Readex Pro', sans-serif;
+	font-style: normal;
+	border-radius: 8px;
+	border: none;
+	padding: 8px;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: 'center';
+	cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.header {
+	display: flex;
+	padding: 32px 64px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button {
+	font-family: 'Readex Pro', sans-serif;
+	font-style: normal;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 20px 40px;
+	border-radius: 8px;
+	cursor: pointer;
+}

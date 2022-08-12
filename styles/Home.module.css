@@ -7,17 +7,3 @@
 	min-height: 100vh;
 	padding: 0 64px;
 }
-
-.header {
-	display: flex;
-	padding: 32px 64px;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.button {
-	background-color: #000000;
-	color: #ffffff;
-	padding: 20px 40px;
-	border-radius: 8px;
-}

@@ -8,9 +8,6 @@ body {
 	background-color: #f2fbf6;
 	font-family: 'Readex Pro', sans-serif;
 	font-style: normal;
-	font-size: 12px;
-	line-height: 15px;
-	color: #ffffff;
 }
 
 a {
@@ -37,6 +34,7 @@ h3 {
 	font-size: 24px;
 	line-height: 30px;
 	color: #000000;
+	margin: 0 0 8px 0;
 }
 
 /* @media (prefers-color-scheme: dark) {
