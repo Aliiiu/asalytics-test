@@ -4,6 +4,12 @@
 	grid-template-columns: auto auto auto auto;
 }
 
+.error-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .button {
 	font-family: 'Readex Pro', sans-serif;
 	font-style: normal;
