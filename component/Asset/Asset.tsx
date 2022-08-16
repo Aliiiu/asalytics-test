@@ -38,7 +38,7 @@ const Asset = () => {
 								<div
 									className={styles.status}
 									style={{
-										backgroundColor: !item.available ? '#BC3131' : '#6FD791',
+										backgroundColor: item.available ? '#6FD791' : '#BC3131',
 									}}
 								>
 									{item.available ? 'Available' : 'Unavailable'}
