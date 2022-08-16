@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import CustomImage from '../../UI/CustomImage/CustomImage';
 import styles from './header.module.css';
 
 const Header = () => {
@@ -8,11 +8,10 @@ const Header = () => {
 			<header className={styles.header}>
 				<Link href={'/'}>
 					<a>
-						<Image
-							src='/Header Logo.png'
+						<CustomImage
+							src={'/Header Logo.png'}
 							alt='Logo'
-							width={150}
-							height='62px'
+							style={{ width: 150, height: 62 }}
 						/>
 					</a>
 				</Link>

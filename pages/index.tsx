@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Header from '../component/Layout/Header';
-import TeamSelection from '../component/Team';
+import Header from '../component/Layout/Header/Header';
+import TeamSelection from '../component/Asset/Asset';
 import styles from '../styles/Home.module.css';
 import {
 	ApolloClient,
@@ -9,6 +9,7 @@ import {
 	ApolloProvider,
 	gql,
 } from '@apollo/client';
+import Asset from '../component/Asset/Asset';
 
 const Home: NextPage = () => {
 	const client = new ApolloClient({
@@ -28,7 +29,8 @@ const Home: NextPage = () => {
 					<h2 style={{ marginTop: 42, marginBottom: 42 }}>
 						List of Algorand Standard Assets <br /> on ASAlytics
 					</h2>
-					<TeamSelection />
+					{/* <TeamSelection /> */}
+					<Asset />
 				</main>
 			</div>
 		</ApolloProvider>

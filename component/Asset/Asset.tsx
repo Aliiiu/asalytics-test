@@ -1,10 +1,10 @@
-import Image from 'next/image';
 import React from 'react';
-import TeamCard from '../UI/TeamCard';
-import styles from './team.module.css';
+import styles from './asset.module.css';
 import { useQuery, gql } from '@apollo/client';
-import Loader from '../UI/Loading';
+import Loader from '../UI/Loader/Loader';
 import { BiError } from 'react-icons/bi';
+import CustomImage from '../UI/CustomImage/CustomImage';
+import Card from '../UI/Card/Card';
 
 const GET_LOCATIONS = gql`
 	query MyQuery {
@@ -19,7 +19,7 @@ const GET_LOCATIONS = gql`
 	}
 `;
 
-const TeamSelection = () => {
+const Asset = () => {
 	const { loading, error, data } = useQuery(GET_LOCATIONS);
 	return (
 		<div style={{ paddingTop: 64, paddingBottom: 32 }}>
@@ -28,24 +28,22 @@ const TeamSelection = () => {
 					data.asalist.result
 						.filter((item: any) => item.logo)
 						.map((item: any) => (
-							<TeamCard key={item.assetId}>
-								<Image
+							<Card key={item.assetId}>
+								<CustomImage
 									src={item.logo}
 									alt={item.name}
-									width='30px'
-									height={57}
-									objectFit='contain'
+									style={{ width: 30, height: 57 }}
 								/>
 								<h3>{item.name}</h3>
-								<button
-									className={styles.button}
+								<div
+									className={styles.status}
 									style={{
 										backgroundColor: !item.available ? '#BC3131' : '#6FD791',
 									}}
 								>
 									{item.available ? 'Available' : 'Unavailable'}
-								</button>
-							</TeamCard>
+								</div>
+							</Card>
 						))}
 			</div>
 			{loading && <Loader />}
@@ -62,4 +60,4 @@ const TeamSelection = () => {
 	);
 };
 
-export default TeamSelection;
+export default Asset;
