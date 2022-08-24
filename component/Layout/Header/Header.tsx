@@ -9,7 +9,7 @@ const Header = () => {
 				<Link href={'/'}>
 					<a>
 						<CustomImage
-							src={'/Header Logo.png'}
+							src={'/HeaderLogo.png'}
 							alt='Logo'
 							style={{ width: 150, height: 62 }}
 						/>
