@@ -3,6 +3,12 @@ import classnames from 'classnames';
 import { CSSProperties, FC } from 'react';
 import styles from './image.module.css';
 
+interface IImage {
+	style: CSSProperties;
+	src: ImageProps['src'];
+	alt: string;
+}
+
 const CustomImage: FC<IImage> = ({ style, src, alt = '' }) => {
 	return (
 		<div style={style} className={styles['image-container']}>

@@ -5,6 +5,7 @@ import Loader from '../UI/Loader/Loader';
 import { BiError } from 'react-icons/bi';
 import CustomImage from '../UI/CustomImage/CustomImage';
 import Card from '../UI/Card/Card';
+import List from 'rc-virtual-list';
 
 const GET_LOCATIONS = gql`
 	query MyQuery {
